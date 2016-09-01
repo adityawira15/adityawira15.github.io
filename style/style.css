@@ -27,7 +27,7 @@ div.desc {
   cursor:pointer;
   margin:5px;
   float:left;
-  position: fixed;
+  position: absolute;
 }
 .button span {
   cursor:pointer;
