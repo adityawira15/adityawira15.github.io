@@ -4,7 +4,6 @@ body {
 h1 {
   color:red;
   text-align:center;
-  position: fixed;
 }
 h2 {
   color:white;
@@ -28,6 +27,7 @@ div.desc {
   cursor:pointer;
   margin:5px;
   float:left;
+  position: fixed;
 }
 .button span {
   cursor:pointer;
