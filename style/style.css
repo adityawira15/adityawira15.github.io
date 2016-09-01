@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+}
+body {
     font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
   margin: 12px 0;
 }
@@ -43,23 +45,8 @@ body {
     h2 {
     color: white;
     text-align: center;
-    -ms-transform: rotate(20deg);
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
 }
-    div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-div.img:hover {
-    border: 1px solid #777;
-}
-div.img img {
-    width: 100%;
-    height: auto;
-}
+    
 div.desc {
     padding: 15px;
     text-align: center;
