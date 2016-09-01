@@ -1,57 +1,52 @@
 body {
-    background-color: lightblue;
+  background-color:lightblue;
 }
-    h1.center {
-    color: red;
-    text-align: center;
-    
+h1 {
+  color:red;
+  text-align:center;
+  position: fixed;
 }
-    h2 {
-    color: white;
-    text-align: center;
+h2 {
+  color:white;
+  text-align:center;
 }
-    
 div.desc {
-    padding: 15px;
-    text-align: center;
+  padding:15px;
+  text-align:center;
 }
 .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: black;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  float: left;
+  display:inline-block;
+  border-radius:4px;
+  background-color:black;
+  border:none;
+  color:#FFFFFF;
+  text-align:center;
+  font-size:16px;
+  padding:10px;
+  width:100px;
+  transition:all 0.5s;
+  cursor:pointer;
+  margin:5px;
+  float:left;
 }
-
 .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  cursor:pointer;
+  display:inline-block;
+  position:relative;
+  transition:0.5s;
 }
-
 .button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  content:'»';
+  position:absolute;
+  opacity:0;
+  top:0;
+  right:-20px;
+  transition:0.5s;
 }
-
 .button:hover span {
-  padding-right: 25px;
+  padding-right:25px;
 }
-
 .button:hover span:after {
-  opacity: 1;
+  opacity:1;
   right: 0;
 }
