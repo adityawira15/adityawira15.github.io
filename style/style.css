@@ -1,40 +1,43 @@
+head {
+  font: 50 20px/20px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 50px 50px;
+}
+.original,
+.box {
+  border-radius: 20px;
+}
+.original {
+  background: #eaeaed;
+  border: 1px dashed #cecfd5;
+  float: right;
+}
+.box {
+  background: white;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  width: 90px;
+}
+.spin {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.spin:hover {
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.hacktiv8 {
+  transform: scale(.80);
+}
 body {
     background-color: lightblue;
-    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
-  margin: 12px 0;
-}
-.card-container {
-  cursor: pointer;
-  height: 300px;
-  perspective: 600;
-  position: relative;
-  width: 200px;
-}
-.card {
-  height: 300%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 200%;
-}
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  border-radius: 6px;
-  height: 300%;
-  position: absolute;
-  overflow: hidden;
-  width: 200%;
-}
-.card .back {
-  background: #eaeaed;
-  color: #0087cc;
-  line-height: 150px;
-  text-align: center;
-  transform: rotateY(180deg);
-}
 }
     h1 {
     color: red;
