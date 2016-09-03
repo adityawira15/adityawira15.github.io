@@ -12,6 +12,23 @@
 			color: white;
 			background-color: red; 
 		}
+		.spin {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.b {
+  transform: rotate(-90deg);
+  width: 150px;
+  height: 100px;
+}
 	</style>
 </head>
 <body>
@@ -28,7 +45,9 @@
 <p>
 	jika website ini di tambahkan pilihan version seperti wireframe dibawah maka user akan lebih mudah mencari apa yang di butuhkan untuk penginstalan pada komputer dengan begitu akan ada banyak yang mendownload aplikasi tersebut. 
 </p>
-<img src="foto/wireframe-2.jpg">
+  <div class="spin">
+<img src="foto/wireframe-2.jpg" class="b">
+</div>
 <p>
 	download wireframenya <a href="foto/wireframe-2.jpg" target="_blank">disini</a>
 </p>
