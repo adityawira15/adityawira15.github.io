@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #dedede;
+	font-family: 'Helvetica', arial, sans-serif;
+
+	font-size: 15px;
+}
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #666;
+}
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 9px;
+}
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+	.left{
+		width: 220px;
+		border: 1px solid #dedede;
+		background: #e5e5e5;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+	.right{
+		width: 220px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.left {
+		width: 25%;
+		background: #fff000;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	.left {
+		width: auto;
+		float: none;
+	}
+	.right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+	</style>
+</head>
+<body>
+	
+
+<div class="container">
+	
+	<div class="header">
+		<h1>Responsive dan adaptive web design</h1>
+	</div>
+	<div class="main">
+		
+		<div class="left">
+			<h3>1.Apa itu adaptive dan responsive web design? Apakah kamu setuju bahwa teknik tersebut bagus? Mengapa atau mengapa tidak?</h3>
+			<p>Jawaban: adaptive dan responsive web design adalah metode yang membuat penampilan webset yang di buka melalui berbagai tempat untuk membuka website mengikuti ukuran tempat yang di buat untuk membuka website. seperti saat kita membuka website di mobile, ukuran website akan mengikuti ukuran yang ada di mobile jika ukuran width di mobile 100px maka akan menampilkan ukuran tersebut tanpa mengubahnya kita hanya memasukan perintah auto pada width agar tampilan menyesuaikan tempat yang di gunakan untuk membuka website. </p>
+      <p>
+        saya setuju, karena semakin lama waktu yang dilewati maka semakin banyak pula perubahan yang terjadi atau pembaruan yang terjadi maka dari itu responsive penting untuk di gunakan di masa depan agar lebih mudah untuk menggunakan website yang di buat.
+      </p>
+		</div>
+
+		<div class="right">
+			<h3>2.Apakah hadirnya smartphone dan tablet mengubah desain web secara signifikan? Bagaimana kira-kira teknologi baru akan mengubah desain web di masa depan ?</h3>
+			<p>
+        Jawaban: perubahan web design dengan adanya tablet atau smartphone tentu akan ada suatu perubahan yang segnifikan seperti website yahoo mail dengan website yahoo mail versi mobile sangat berbeda, website yahoo mail versi mobile sangat simple dan mudah untuk di gunakan pada mobile karena fokus pada 1 tujuan dan tidak memakan banyak ruang, di yahoo mail versi mobile terdapat slide list di sebelah kiri untuk kita yang menggunakan website yahoo mail versi mobile lebih mudah mencari tujuan kita menggunakan website tersebut dan tidak memakan banyak ruang pada mobile menjadikan website tersebut menarik dan terfokus pada 1 tujuan.
+      </p>
+      <p>
+        Perkiraan teknologi baru yang akan mengubah suatu web dengan adanya tampilan seperti tombol home pada layar yang ada pada iphone, tampilan tersebut memudahkan pengguna website tidak perlu repot repot mencari link tujuan yang akan kita tuju, tombol home bisa berisi situs situs yang sering kita kunjungi seperti google dan facebook, design web tersebut tinggal kita isi fitur fitur lainnya yang akan datang di masa depan nanti, itulah perkiraan teknologi yang bisa mengubah web design di masa depan.
+      </p>
+		</div>
+
+		<div class="left">
+			<h3>3.Bagaimana kira-kira orang yang memiliki kekurangan fisik menggunakan website? Apakah kita perlu menyesuaikan website untuk mereka juga? Solusi apa yang dapat mengatasi keadaan tersebut?</h3>
+			<p>
+        Jawaban: Orang yang kekurangan fisik menggunakan website akan sulit untuk menggukananya apa lagi dia kehilangan tangannya atau tidak bisa melihat tapi kita sebagai programer harus bisa menyesuaikan website untuk mereka yang memiliki kekurangan pada fisiknya karena setiap orang bisa melakukan perubahan yang amat besar tergantung dari kemauan mereka, solusi yang dapat kita berikan kepada mereka yaitu memberikan website yang bisa di gunakan oleh orang yang memiliki kekurangan fisik seperti aplikasi android yang menggunakan fitur talkback, itu memungkinkan pengguna yang tidak mampu melihat bisa menggunakan hp android begitu juga website kita sebagai programer membuat suatu website yang bisa menggunakan fitur talkback tersebut  adalah solusinya.
+      </p>
+		</div>
+
+    <div class="right">
+			<h3>4.Ide atau konsep apa yang sesuai denganmu saat mempelajari desain web ?</h3>
+			<p>
+        Membuat web yang menggunakan banyak fitur tetapi mudah mengakses semua fitur dan design tampilan yang sederhana dan menarik. 
+      </p>
+		</div>
+	</div> 
+
+	<div class="footer">
+		<h4>Footer</h4>
+		<p>Copyright &copy; 2016 <a href="http://adityawira15.github.io">adityawiranugraha.github.io</a></p>
+	</div> 
+  </div>
+</div>
+
+</body>
+</html>
