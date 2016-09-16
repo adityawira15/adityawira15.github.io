@@ -2,37 +2,36 @@
 
 //pangkat
 
-var a = 2;
-var b = 3;
-var pangkat = function (){
-  alert(Math.pow(a,b));
+var pangkat = function (x, y){
+var a = x;
+var b = y;
+  console.log(Math.pow(a,b));
 }
-pangkat();
+pangkat(2,3);
 
 // akar kuadrat
 
-var c = number;
 var akarKuadrat = function (number) {
-alert(Math.sqrt(c));
-}
+var c = number;
+console.log(Math.sqrt(c));
+};
 akarKuadrat(9);
 
 //hipotenusa
 
-var d = 3;
-var e = 4;
+var hipotenusa = function(x,y) {
+var d = x;
+var e = y;
 var f = 2;
-var hipotenusa = function() {
-  alert(Math.sqrt((Math.pow(d, f) + (Math.pow(e, f)))))
+  console.log(Math.sqrt((Math.pow(d, f) + (Math.pow(e, f)))))
 }
-hipotenusa();
+hipotenusa(3, 4);
 
 // keliling lingkaran
 
-var LK = function(number)
-{
+var LK = function(number){
 var jari = number;
 var hasil = 3.14*jari*jari;
-alert(hasil);
+console.log(hasil);
 };
 LK(7);
