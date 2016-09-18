@@ -1,48 +1,29 @@
-var Program = {
-adit:{
-    nama:"adit",
-    email: "rtw@sda.com",
-    telepon: "(346983)",
-    },
-
-agung:{
-    nama: "agung",
-    email:"gth@haus.com",
-    telepon: "(3874834)",
-    }
-
-};
-
-var DaftarKontak = [Program.adit,Program.agung];
-
-function printPerson(person) {
-    console.log("Nama :" +person.nama + "\n" +"email :" + person.email + "\n"+"telepon :" +person.telepon + "\n");
-}
-
-var tambahKontak = function(nama, email, telepon){
+var DaftarKontak = new Array();
+DaftarKontak.Program = new Object();
+DaftarKontak.Program.tambahKontak = function(nama, email, telepon){
 DaftarKontak[DaftarKontak.length] = {
     nama: nama,
     email: email,
     telepon: telepon,
+   }
 };
-};
-
-function list() {
-	var contactsLength = DaftarKontak.length;
-	for (var i = 0; i < contactsLength; i++) {
-		printPerson(DaftarKontak[i]);
+DaftarKontak.Program.LihatSemua = function LihatSemua() {
+	var kontak = DaftarKontak.length;
+	for (var i = 0; i < kontak; i++) {
+		console.log(DaftarKontak[i]);
 	}
-}
-
-function search(nama){
-var contactsLength = DaftarKontak.length;
-    for (var i = 0; i < contactsLength; i++) {
+};
+DaftarKontak.Program.cariKontak = function cariKontak(nama){
+var kontak = DaftarKontak.length;
+    for (var i = 0; i < kontak; i++) {
         if(nama == DaftarKontak[i].nama){
-        printPerson(DaftarKontak[i]);
+        console.log(DaftarKontak[i]);
         }
     }
 };
 
-tambahKontak("rizki", "rizki@hj.com", "34763984");
-list();
-search("rizki");
+DaftarKontak.Program.tambahKontak("Ruben","ruben@gmail.com","021777555");
+DaftarKontak.Program.tambahKontak("gugel","gugel@gmail.com","021777888")
+DaftarKontak.Program.LihatSemua();
+DaftarKontak.Program.cariKontak("Ruben");
+console.log(DaftarKontak);
