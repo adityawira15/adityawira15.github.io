@@ -26,4 +26,3 @@ DaftarKontak.Program.tambahKontak("Ruben","ruben@gmail.com","021777555");
 DaftarKontak.Program.tambahKontak("gugel","gugel@gmail.com","021777888")
 DaftarKontak.Program.LihatSemua();
 DaftarKontak.Program.cariKontak("Ruben");
-console.log(DaftarKontak);
